@@ -1,0 +1,226 @@
+/*
+    Group Members: Devonte Salmon
+    Date: 5/11/2026
+    File Name: style.css
+*/
+
+/* =========================
+   RESET (KEEP SIMPLE)
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: linear-gradient(to bottom right, #4a4a4a, #808080);
+    color: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* =========================
+   SKIP LINK
+========================= */
+
+.skip {
+    position: absolute;
+    left: -999px;
+    top: 20px;
+    background-color: #90ee90;
+    color: #222;
+    padding: 10px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.skip:focus {
+    left: 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #2e8b57;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #90ee90;
+}
+
+header h1 {
+    font-family: "Archivo Black", Arial, sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    animation: slideIn 2s ease;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   NAV FIX (IMPORTANT)
+========================= */
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   IMAGES (IMPORTANT FIX)
+========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Prevent Bootstrap container spacing issues */
+.container img {
+    margin: 0;
+}
+
+/* =========================
+   FIGURES
+========================= */
+
+figure {
+    background-color: rgba(46, 139, 87, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #2e8b57;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #90ee90;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* =========================
+   FORMS (BOOTSTRAP SAFE)
+========================= */
+
+form {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+fieldset {
+    border: 2px solid #90ee90;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    color: #90ee90;
+    font-family: "Archivo Black", Arial, sans-serif;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* =========================
+   MEDIA QUERY
+========================= */
+
+@media screen and (min-width: 768px) {
+    .social img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .social img {
+        width: 60px;
+        height: 60px;
+    }
+}
