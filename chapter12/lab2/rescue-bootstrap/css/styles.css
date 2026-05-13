@@ -1,0 +1,54 @@
+/*
+    Student Name: Devonte Salmon
+    Date: May 1, 2026
+    File Name: styles.css
+*/
+
+/* Hero image style */
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)), url(../images/baby-hawk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* Welcome text positioning */
+.welcome {
+    position: absolute;
+    top: 40%;
+}
+
+/* Large heading style */
+.display-1 {
+    font-size: 4em;
+}
+
+/* Brown background utility */
+.bg-brown {
+    background-color: #2a1f14;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) { 
+    
+    .welcome {
+        top: 20%;
+        left: 5%;
+        padding: 2em;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 992px) { 
+    
+    .hero {
+        background-position: left;
+    }
+    
+    .display-1 {
+        font-size: 8em;
+    }
+}
